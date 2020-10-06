@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: silver;
+    font-family: 'ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 18em;
+    height: 32em;
+    background: #191a35;
+    border-radius: 1em;
+    padding: .6em .5em;
+    box-shadow: .5em .5em 1em black;
+}
+
+.top-icons {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ea2a4f;
+}
+
+// x
+.top-icons .left {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row;
+    width: 100%;
+    height: 100%;
+    font-size: .8em;
+    p {
+        text-transform: capitalize;
+    }
+    p:nth-child(4) {
+        color: #ea2a4f;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
+
+// x
+.top-icons .right {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
+    width: 100%;
+    height: 100%;
+}
+
+.top-icons .right i {
+    font-size: .7em;
+    margin: 0 .3em;
+}
+
+// x
+.slider {
+    flex: 6;
+    background: url(1.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: .5em 15%;
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider::before {
+    content: 'muffins';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3em;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.slider .right-i {
+    flex: 5;
+    color: grey;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.text-bottom {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em 0;
+    margin: .3em 0;
+    width: 100%;
+    height: 100%;
+    span {
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: column;
+        width: 100%;
+        height: 100%;
+        h4 {
+            color: white;
+            margin-bottom: .3em;
+        }
+        p {
+            font-size: .8em;
+            width: 90%;
+            color: white;
+        }
+    }
+    .prize {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        margin: 0 .1em;
+        border-radius: .5em;
+        padding: .5em;
+        width: 100%;
+        height: 100%;
+        h3 {
+            font-size: 2.5em;
+            color: #ffa51d;
+            text-align: center;
+        }
+        p {
+            font-size: .7em;
+            margin-bottom: .2em;
+        }
+        .stars {
+            font-size: .6em;
+        }
+    }
+}
+
+.buton button {
+    width: 9em;
+    height: 2.5em;
+    background: #ffa51d;
+    border-radius: .8em;
+    border: none;
+    outline: none;
+    color: rgb(29, 31, 1);
+    font-weight: 700;
+}
