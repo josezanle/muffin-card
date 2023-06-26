@@ -41,7 +41,7 @@ body {
   height: 32em;
   background: #191a35;
   border-radius: 1em;
-  padding: .6em .5em;
+  padding: 1em;
   -webkit-box-shadow: .5em .5em 1em black;
           box-shadow: .5em .5em 1em black;
 }
